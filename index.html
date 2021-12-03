@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Unabridged: Web Publishing lightning talk</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/dssg.css" id="theme">
+	<link rel="stylesheet" href="plugin/accessibility/helper.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+	<link rel="stylesheet" href="css/fontawesome/light.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Web Publishing</h1>
+				<p>Jeremy Guillette</p>
+				<p><a href="https://atg.fas.harvard.edu/">FAS Academic Technology</a></p>
+			</section>
+			<section>
+				<h2>What I'm going to talk about:</h2>
+				<ol>
+					<li>Considerations</li>
+					<li>Options</li>
+				</ol>
+			</section>
+			<section>
+				<section>
+					<h2>Considerations</h2>
+				</section>
+				<section>
+					<h3>Why does your site exist?</h3>
+					<aside class="notes">
+						<p>This is the main thing to keep in mind when making a site: the purpose of its existence. Don't make a site just because you feel like you should, make a site because it's the best way to accomplish a goal that you have. That goal will also inform what requirements you have for a platform, since it doesn't matter how nice a platform's text editor is if you need to host an interactive map. You might also tolerate a longer update process for a site you update once a year, but not for one you need to keep current on a weekly basis.</p>
+					</aside>
+				</section>
+				<section>
+					<h3>Non-negotiables</h3>
+					<ul>
+						<li>It needs to be accessible. (talk to <a href="https://accessibility.huit.harvard.edu/">DAS</a>)</li>
+						<li>Sites require ongoing maintenance.</li>
+					</ul>
+					<aside class="notes">
+						<p>Two things that aren't negotiable about any site: accessibility and maintenance. Neurodiverse people and people with different kinds of physical ability exist in the world and will be part of the audience for any site, so you want to make sure that your site isn't built to exclude them. If you're making a site and want advice on making it more accessible, talk to Digital Accessibility Services. They're great.Also, sites require ongoing maintenance. For Harvard platforms, that's done within HUIT and you don't have to pay for it as a Harvard affiliate. If you're going outside of Harvard, you'll need to provide money and/or labor to maintain your site.</p>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Options</h2>
+					<aside class="notes">So, let's take a look at some Harvard-supported options for getting stuff online.</aside>
+				</section>
+				<section>
+					<h3><a href="https://openscholar.harvard.edu/">Open Scholar</a></h3>
+					<ul>
+						<li>Based in Drupal</li>
+						<li>Supported by Harvard Web Publishing</li>
+						<li>Robust SEO and accessibility testing</li>
+						<li>Built with academics in mind</li>
+						<li>Some support and customization is fee for service</li>
+					</ul>
+					<aside class="notes">
+						<p>Most of the department sites you'll see in the FAS run on OpenScholar. It's the main platform for scholarly portfolios, departments, and projects at Harvard. It's supported by Harvard Web Publishing (or HWP), who've tested for accessibility and make sure pages show up in search results. It can be great for portfolios and projects, but editing can be clunky and feel limiting, and some support and customization through HWP is fee for service.</p>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://huit.harvard.edu/campuspress-harvard">Campus Press</a></h3>
+					<ul>
+						<li>Based in WordPress</li>
+						<li>New offering from Harvard Web Publishing</li>
+						<li>Robust accessibility testing</li>
+						<li>More familiar interface / environment</li>
+						<li>Limited/vetted set of plugins & themes</li>
+					</ul>
+					<aside class="notes">
+						<p>Campus Press is a new offering from Harvard Web Publishing, and it's a WordPress-based platform. The WordPress interface is likely to be at least a little familiar, as WordPress powers something like a third of the web. It gets the same kind of accessibility testing for supported themes as Open Scholar, but in a different environment. Campus Press only makes a certain vetted subset of themes and plugins available, so you won't have as many options as you would with self-hosted WordPress, but you'll know that the options you have are accessible and secure.</p>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://atg.fas.harvard.edu/omeka">Omeka</a> (Classic)</h3>
+					<ul>
+						<li>Supported by FAS Academic Technology</li>
+						<li>Harvard theme is tested for accessibility</li>
+						<li>Libraries / Archives / Museums tool</li>
+						<li>Metadata-focused</li>
+						<li>Support for IIIF images</li>
+						<li>Unique plugins like Neatline</li>
+					</ul>
+					<aside class="notes">
+						<p>Omeka is a platform that we in FAS Academic Technology provide. It's mostly used in libraries, archives, and museums, since it's very much focused on collections of stuff and the metadata that describe that stuff. It also has support for IIIF, which is a standard for displaying images online used by many libraries, archives and musuems, including Harvard's, so you have tools available in Omeka for working with those images in more robust ways, like gathering them into workspaces and annotating them. Omeka also has some plugins that we support that provide unique functionality, like the Neatline plugin for annotating maps.</p>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://atg.fas.harvard.edu/scalar">Scalar</a></h3>
+					<ul>
+						<li>Supported by FAS Academic Technology</li>
+						<li>Accessibility improvements are ongoing</li>
+						<li>Built for scholarly monographs</li>
+						<li>Good for using multimedia, nonlinear narratives</li>
+						<li>Use connections between pages to create widgets</li>
+						<li>Can easily get a class roster imported</li>
+					</ul>
+					<aside class="notes">
+						<p>Scalar is another platform that we support in FAS Academic Technology. Scalar is focused more on monograph-style scholarly works, but with an emphasis on multimedia and nonlinearity. You can make a site that makes effective use of images and videos with Scalar, and provide an organization that encourages wandering and exploration over a straight linear path (although linearity is also an option). You can also use the different connections between parts of your website to represent connected pages on maps, timelines, or other visualizations. It's often used in classes for non-traditional and collaborative writing assignments, so we have tools to help import class rosters.</p>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<h2>Summary of options at Harvard</h2>
+				<ul>
+					<li><a href="https://openscholar.harvard.edu/">Open Scholar</a></li>
+					<li><a href="https://huit.harvard.edu/campuspress-harvard">Campus Press</a></li>
+					<li><a href="https://atg.fas.harvard.edu/omeka">Omeka</a></li>
+					<li><a href="https://atg.fas.harvard.edu/scalar">Scalar</a></li>
+				</ul>
+			</section>
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/accessibility/helper.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+		});
+	</script>
+
+</body>
+
+</html>
